@@ -14,3 +14,5 @@ after_success:
 
 notifications:
   email: false
+  
+travis encrypt cb1357751361cf1373defad9cbdabc7163a02abb
