@@ -1,2 +1,3 @@
-[![Build Status](https://travis-ci.org/seekerk/gtest.svg?branch=master)](https://travis-ci.org/seekerk/gtest)
-[![Coverage Status](https://coveralls.io/repos/seekerk/gtest/badge.svg?branch=master)](https://coveralls.io/github/seekerk/gtest?branch=master)
+
+[![Coverage Status](https://coveralls.io/repos/github/Abo3toom/test-lab1/badge.svg?branch=master)](https://coveralls.io/github/Abo3toom/test-lab1?branch=master)
+[![Build Status](https://travis-ci.com/Abo3toom/test-lab1.svg?branch=master)](https://travis-ci.com/Abo3toom/test-lab1)
