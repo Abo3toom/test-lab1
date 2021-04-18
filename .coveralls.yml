@@ -1,0 +1,8 @@
+repo_token: utdgMektGinKV6z3GnVewUmLjaLfyZKuJ
+
+gem 'coveralls', require: false
+
+require 'coveralls'
+Coveralls.wear!
+
+# Your code here.
