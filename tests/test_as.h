@@ -15,28 +15,30 @@ TEST(Func, no_sol) {
 TEST(Func, one_sol) {
     getRoots r = Func(4, 4, 1);
     EXPECT_EQ(-0.5, r.x1);
+    EXPECT_EQ(1, res.count);
 }
 
 TEST(Func, two_sol) {
     getRoots r = Func(2, 5, 2);
     EXPECT_EQ(-2, r.x1);
     EXPECT_EQ(-0.5, r.x2);
+    EXPECT_EQ(2, r.n);
 }
 TEST(Func, test4_negative){
     getRoots r = Func(0, 1, 1);
     EXPECT_EQ(-1, r.x1);
-
+    EXPECT_EQ(1, r.n);
 }
 TEST(Func, test5_negative){
     getRoots r = Func(1, 0, -1);
     EXPECT_EQ(-1, r.x1);
     EXPECT_EQ(1, r.x2);
-
+    EXPECT_EQ(2, r.n);
 }
 TEST(Func, test6_negative){
     getRoots r = Func(1, 0, 1);
     EXPECT_EQ(0, r.n);
-
+    
 }
 TEST(Func, test7_negative){
     getRoots r = Func(0, 0, 1);
@@ -46,6 +48,7 @@ TEST(Func, test7_negative){
 TEST(Func, test8_negative){
     getRoots r = Func(0, 1, 0);
     EXPECT_EQ(0, r.x1);
+     EXPECT_EQ(1, r.n);
 
 }
 TEST(Func, test9_negative){
@@ -57,12 +60,13 @@ TEST(Func, test10_negative){
     getRoots r = Func(1, 1, 0);
     EXPECT_EQ(-1, r.x1);
     EXPECT_EQ(0, r.x2);
+    EXPECT_EQ(2, r.n);
 
 }
 TEST(Func, test11_negative){
     getRoots r = Func(1, 0, 0);
     EXPECT_EQ(0, r.x1);
-
+    EXPECT_EQ(1, r.n);
 
 }
 
