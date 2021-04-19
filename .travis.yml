@@ -4,7 +4,7 @@ language:
 before_install:
   - pip install --user cpp-coveralls
   
-  addons:
+addons:
   sonarcloud:
     organization: "abo3toom"
     token: $SONAR_TOKEN
