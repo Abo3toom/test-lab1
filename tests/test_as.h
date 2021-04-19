@@ -15,7 +15,7 @@ TEST(Func, no_sol) {
 TEST(Func, one_sol) {
     getRoots r = Func(4, 4, 1);
     EXPECT_EQ(-0.5, r.x1);
-    EXPECT_EQ(1, res.count);
+    EXPECT_EQ(1, r.n);
 }
 
 TEST(Func, two_sol) {
