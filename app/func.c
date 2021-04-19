@@ -10,6 +10,7 @@ getRoots Func(double a, double b, double c) {
             return r;
         }else{
         r.x1 = (-c)/b;
+        r.n = 1;
         return r;
         }
     }
@@ -22,10 +23,12 @@ getRoots Func(double a, double b, double c) {
     }
     if(D == 0.0) {
         r.x1 = -b/(2*a);
+        r.n = 1;
     }
     if(D > 0.0) {
         r.x1 = (-b - sqrt(D)) / (2*a);
         r.x2 = (-b + sqrt(D)) / (2*a);
+        r.n = 2;
     }
 
     return r;
